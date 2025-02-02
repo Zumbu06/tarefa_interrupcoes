@@ -27,6 +27,7 @@ O debouncing é necessário para evitar múltiplas detecções de um único pres
 Essa função  é responsável por atualizar a matriz de LEDs para exibir o número atual. Pra isso primeiro o clear_leds é chamado como ja foi explicado, definimos a cor que no caso ta vermelho com intensidade 50. Leds_por_numero é importante para obter os índices dos leds que deve ser acesso, por final o print_leds envia os dados de cor para a matriz e atualiza com o número correto.
 
 5: Configuração de interrupções 
+
 Na main, o "gpio_set_irq_enabled_with_callback" habilita interrupções para os botões BOTAO_A e BOTAO_B. As interrupções são configuradas para serem acionadas na borda de descida GPIO_IRQ_EDGE_FALL, ou seja, quando o botão é pressionado. Isso é importante para o programa nao precisar ficar verificando o tempo todo o estado dos pinos e economizar recursos do processador.
 
 6: Loop do led rgb
