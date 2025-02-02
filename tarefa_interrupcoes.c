@@ -80,7 +80,7 @@ void atualizar() {
     clear_leds();
 
     // Definição da cor (vermelho)
-    uint8_t R = 255, G = 0, B = 0;
+    uint8_t R = 50, G = 0, B = 0;
 
     // Número total de LEDs que cada número acende
     uint8_t tamanho[] = {12, 8, 11, 11, 11, 11, 12, 9, 13, 12};
