@@ -22,5 +22,9 @@ Esta função verifica qual botão foi pressionado e atualiza o número exibido 
 
 O debouncing é necessário para evitar múltiplas detecções de um único pressionamento de botão devido a flutuações mecânicas. No código, o debouncing é implementado verificando o tempo decorrido desde a última interrupção
 
+4: Função atualizar
+
+Essa função  é responsável por atualizar a matriz de LEDs para exibir o número atual. Pra isso primeiro o clear_leds é chamado como ja foi explicado, definimos a cor que no caso ta vermelho com intensidade 50. Leds_por_numero é importante para obter os índices dos leds que deve ser acesso, por final o print_leds envia os dados de cor para a matriz e atualiza com o número correto.
+
 Video demonstração na placa:
 https://youtube.com/shorts/WOpCcLdvbYI?si=zkP74Z_wYeQfjLEX
